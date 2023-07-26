@@ -1,6 +1,6 @@
 {
-  "name": "rnbw-vs",
-  "displayName": "rnbw-vs",
+  "name": "rnbw-vscode",
+  "displayName": "rnbw-vscode",
   "description": "A vs code extension for rnbw",
   "version": "0.0.1",
   "engines": {
@@ -9,7 +9,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
