@@ -14,8 +14,9 @@
   "contributes": {
     "commands": [
       {
-        "command": "rnbw-vs.helloWorld",
-        "title": "Hello World"
+        "command": "rnbw-vs.helloRnbw",
+        "title": "Hello Rnbw",
+        "category": "Rnbw"
       }
     ]
   },
