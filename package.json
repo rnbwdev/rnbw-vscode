@@ -14,14 +14,27 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "menus": {
+      "editor/title": [
+        {
+          "when": "editorLangId == html",
+          "command": "rnbw-vs.openRnbwDev",
+          "group": "navigation"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "rnbw-vs.helloRnbw",
-        "title": "Hello Rnbw",
-        "category": "Rnbw"
+        "command": "rnbw-vs.openRnbwDev",
+        "title": "open rnbw",
+        "icon": {
+          "dark": "./src/images/icon-dark.png",
+          "light": "./src/images/icon-light.png"
+        }
       }
     ]
   },
+  "icon": "./src/images/icon-dark.png",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
